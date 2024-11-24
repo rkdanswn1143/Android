@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/메모하기"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="메모하기"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/et_filename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="파일 이름을 입력하세요" />
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="여기에 메모를 입력하세요"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btn_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read" />
+
+    <Button
+        android:id="@+id/btn_write"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Write" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete" />
+
+</LinearLayout>

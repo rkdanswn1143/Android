@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_popular"
+        android:title="인기 영화"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_now_playing"
+        android:title="현재 상영 중인 영화"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_upcoming"
+        android:title="개봉 예정 영화"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_top_rated"
+        android:title="높은 평점 영화"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_genre"
+        android:title="장르별 영화"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/action_genre_action"
+                android:title="액션 영화"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/action_genre_romance"
+                android:title="로맨스 영화"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/action_genre_horror"
+                android:title="공포 영화"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+</menu>
